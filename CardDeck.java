@@ -28,14 +28,11 @@ public class CardDeck {
 			
 			if(i >= 0 && i < 13) {
 				deck.add(new Card(CardConstants.SUITE_CLUB, rank));
-			}
-			if(i >= 13 && i < 26) {
+			} else if(i >= 13 && i < 26) {
 				deck.add(new Card(CardConstants.SUITE_HEART, rank));
-			}
-			if(i >= 26 && i < 39) {
+			} else if(i >= 26 && i < 39) {
 				deck.add(new Card(CardConstants.SUITE_DIAMOND, rank));
-			}
-			if(i >= 39 && i < 52) {
+			} else if(i >= 39 && i < 52) {
 				deck.add(new Card(CardConstants.SUITE_SPADE, rank));
 			}
 		}
